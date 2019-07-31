@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import './styles.scss';
-import gekofx from '../../assets/images/gekofx_poster.jpg';
-import minesweeper from '../../assets/images/minesweeper_poster.jpg';
 import personal_site from '../../assets/images/personal_site_poster.jpg';
 
 export default class Projects extends Component {
