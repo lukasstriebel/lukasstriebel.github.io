@@ -11,9 +11,9 @@ interface IState {
 
 interface IVisibleState {
     [key: string]: boolean;
-    whyImDifferent: boolean,
-    myPractices: boolean,
-    howYouHelp: boolean
+    background: boolean,
+    work: boolean,
+    passion: boolean
 }
 
 export default class AboutMe extends Component<IProps, IState> {
@@ -23,46 +23,46 @@ export default class AboutMe extends Component<IProps, IState> {
 
         this.state = {
             visible: {
-                myPractices: false,
-                whyImDifferent: true,
-                howYouHelp: false
+                work: false,
+                background: true,
+                passion: false
             }
         }
     }
 
-    setHowImDifferentActive = () => {
+    setBackgroundActive = () => {
         const visibleState = this.state.visible;
         for(let key in visibleState){
             visibleState[key] = false;
         }
 
-        visibleState['whyImDifferent'] = true;
+        visibleState['background'] = true;
 
         this.setState({
             visible: visibleState
         });
     }
 
-    setMyPracticesActive = () => {
+    setWorkActive = () => {
         const visibleState = this.state.visible;
         for(let key in visibleState){
             visibleState[key] = false;
         }
 
-        visibleState['myPractices'] = true;
+        visibleState['work'] = true;
 
         this.setState({
             visible: visibleState
         });
     }
 
-    setHowYouHelpActive = () => {
+    setPassionActive = () => {
         const visibleState = this.state.visible;
         for(let key in visibleState){
             visibleState[key] = false;
         }
 
-        visibleState['howYouHelp'] = true;
+        visibleState['passion'] = true;
 
         this.setState({
             visible: visibleState
@@ -76,15 +76,15 @@ export default class AboutMe extends Component<IProps, IState> {
                     <div className={`col-1`}>
                         <h2 className={`heading`}>Important things to know about me.</h2>
                         <ol>
-                            <li onClick={this.setHowImDifferentActive} className={`${this.state.visible.whyImDifferent && 'active'}`}>My Background</li>
-                            <li onClick={this.setMyPracticesActive} className={`${this.state.visible.myPractices && 'active'}`}>My current work</li>
-                            <li onClick={this.setHowYouHelpActive} className={`${this.state.visible.howYouHelp && 'active'}`}>My passion</li>
+                            <li onClick={this.setBackgroundActive} className={`${this.state.visible.background && 'active'}`}>My background</li>
+                            <li onClick={this.setWorkActive} className={`${this.state.visible.work && 'active'}`}>My current work</li>
+                            <li onClick={this.setPassionActive} className={`${this.state.visible.passion && 'active'}`}>My passion</li>
                         </ol>
                     </div>
                     <div className={`col-2`}>
-                        { this.state.visible.whyImDifferent && <WhatSetsMeApart/> }
-                        { this.state.visible.myPractices && <MyCurrentOnJobPractices/> }
-                        { this.state.visible.howYouHelp && <HowYouWillHelpMe/> }
+                        { this.state.visible.background && <Background/> }
+                        { this.state.visible.work && <Work/> }
+                        { this.state.visible.passion && <Passion/> }
                     </div>
                 </div>
             </div>
@@ -93,7 +93,7 @@ export default class AboutMe extends Component<IProps, IState> {
 }
 
 
-function WhatSetsMeApart() {
+function Background() {
     return (
         <React.Fragment>
             <div className={`what-sets-me-apart about-me-item`}>
@@ -106,7 +106,7 @@ function WhatSetsMeApart() {
     );
 }
 
-function MyCurrentOnJobPractices() {
+function Work() {
     return (
         <React.Fragment>
             <div className={`my-practices about-me-item`}>
@@ -137,7 +137,7 @@ function MyCurrentOnJobPractices() {
     );
 }
 
-function HowYouWillHelpMe() {
+function Passion() {
     return (
         <React.Fragment>
             <div className={`how-you-will-help about-me-item`}>
