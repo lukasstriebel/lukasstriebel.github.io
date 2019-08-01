@@ -11,15 +11,13 @@
         display: grid;
         grid-row-gap: 2rem;
         grid-template-columns: auto auto;
-    }
-    
-    .container {
 
         @include breakpoint(md){
-            grid-template-columns: 1fr;
+            display: block;
         }
-
-        
+    }
+    
+    .container {        
 
         .col-1 {
             margin-bottom: 5rem;
@@ -40,6 +38,9 @@
             font-size: 10rem;
             padding: 0 1rem;
             transition: all 0.1s ease-in-out;
+            @include breakpoint(md){
+                font-size: 8rem;
+            }
         }
         i:hover {
             z-index: 1;
@@ -53,6 +54,10 @@
         img {
             width: 10rem;
             margin: 0 1rem -10px;
+            @include breakpoint(md){
+                width: 8rem;
+                margin: 0 0 -10px;
+            }
         }
     }
     
