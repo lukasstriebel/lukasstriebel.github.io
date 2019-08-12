@@ -50,7 +50,7 @@ export default class Projects extends Component {
                                     <img src={projectmanagement} alt={`Project Thumbnail`} />
                                 </div>
                                 <div className={`project__display__actions`}>
-                                    <a href={`https://lukasstriebel.github.io/projectmanagement/`} className={`link`}><i className="fas fa-desktop"></i><span>Live Preview</span></a>
+                                    <a href={`https://lukasstriebel.github.io/projectmanagement/`} className={`link`}><i className="fas fa-desktop"></i><span>Live Site</span></a>
                                     {/* <a href={`#`} className={`link link--inactive`}><i className="fas fa-code-branch"></i><span>Source Private</span></a> */}
                                     <a href={`https://github.com/lukasstriebel/projectmanagement`} className={`link`}><i className="fas fa-code-branch"></i><span>View Source</span></a>
                                 </div>
@@ -63,14 +63,14 @@ export default class Projects extends Component {
                                     <li><i className="fas fa-dot-circle"></i><p>Typescript</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>HTML5</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>CSS3</p></li>
-                                    <li><i className="fas fa-dot-circle"></i><p>Sass</p></li>
                                 </ul>
                             </div>
                         </div>
                         <div className={`col-2`}>
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>Overview</p>
-                                <p>A Kanban Board similar to Trello</p>
+                                <p>A Kanban Board similar to Trello. Create, assign and manage your current tasks. Invite team members to collaborate. Built with React and Typescript. Uses the local browser stoarge to save your data across sessions.
+                                The Site is currently hosted on Github Pages.</p>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@ export default class Projects extends Component {
                                     <img src={movies} alt={`Project Thumbnail`} />
                                 </div>
                                 <div className={`project__display__actions`}>
-                                    <a href={`https://lukasstriebel.github.io/movies/`} className={`link`}><i className="fas fa-desktop"></i><span>Live Preview</span></a>
+                                    <a href={`https://myimdb.netlify.com/`} className={`link`}><i className="fas fa-desktop"></i><span>Live Site</span></a>
                                     {/* <a href={`#`} className={`link link--inactive`}><i className="fas fa-code-branch"></i><span>Source Private</span></a> */}
                                     <a href={`https://github.com/lukasstriebel/movies`} className={`link`}><i className="fas fa-code-branch"></i><span>View Source</span></a>
                                 </div>
@@ -93,17 +93,19 @@ export default class Projects extends Component {
                                 <ul className={`project__technologies__list`}>
                                     <li><i className="fas fa-dot-circle"></i><p>ReactJS</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>NodeJS</p></li>
-                                    <li><i className="fas fa-dot-circle"></i><p>Typescript</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>Javascript</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>Axios</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>AWS Lambda</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>HTML5</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>CSS3</p></li>
-                                    <li><i className="fas fa-dot-circle"></i><p>Sass</p></li>
                                 </ul>
                             </div>
                         </div>
                         <div className={`col-2`}>
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>Overview</p>
-                                <p>A database of movies like IMDb.</p>
+                                <p>A database of movies like IMDb. Built with React and Javascript. Uses Axios and AWS Lambda functions to retrieve up-to-date data from the backend server.
+                                The Site is currently hosted on Netlify.</p>
                             </div>
                         </div>
                     </div>
