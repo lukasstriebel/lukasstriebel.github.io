@@ -22,7 +22,7 @@ export default class ContactButtons extends React.Component<{}>{
                     <i className="fas fa-at"></i>
                     <span>Email</span>
                 </a>
-                <a href={`https://lukasstrieblresume.s3.eu-central-1.amazonaws.com/resume.pdf`} className={`action`} target={`_blank`}>
+                <a href={`https://lukasstrieblresume.s3.eu-central-1.amazonaws.com/Resume_Lukas_Striebel.pdf`} className={`action`} target={`_blank`}>
                     <i className="fas fa-newspaper"></i>
                     <span>Resume</span>
                 </a>                
