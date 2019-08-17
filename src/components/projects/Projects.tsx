@@ -68,8 +68,9 @@ export default class Projects extends Component {
                         <div className={`col-2`}>
                             <div className={`project__detail-section`}>
                                 <p className={`small-section-title`}>Overview</p>
-                                <p>A Kanban Board similar to Trello. Create, assign and manage your current tasks. Invite team members to collaborate. Built with <span className={`highlight`}>React and Typescript</span>. It uses the local browser stoarge to save your data across sessions.
-                                The site is currently hosted on Github Pages.</p>
+                                <p>A Kanban Board similar to Trello. Create, assign and manage your current tasks. Invite team members to collaborate.
+                                    <br></br>Built with <span className={`highlight`}>React and Typescript</span>. It uses the local browser stoarge to save your data across sessions.
+                                    <br></br>The site is currently hosted on Github Pages.</p>
                             </div>
                         </div>
                     </div>
@@ -93,7 +94,7 @@ export default class Projects extends Component {
                                     <li><i className="fas fa-dot-circle"></i><p>NodeJS</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>Javascript</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>Axios</p></li>
-                                    <li><i className="fas fa-dot-circle"></i><p>AWS Lambda</p></li>
+                                    <li><i className="fas fa-dot-circle"></i><p>AWS</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>HTML5</p></li>
                                     <li><i className="fas fa-dot-circle"></i><p>CSS3</p></li>
                                 </ul>
@@ -104,8 +105,8 @@ export default class Projects extends Component {
                                 <p className={`small-section-title`}>Overview</p>
                                 <p>A database of movies like IMDb. Built with <span className={`highlight`}>React and Javascript</span>.
                                 <br></br>
-                                It uses <span className={`highlight`}>Axios and AWS Lambda functions</span> to retrieve up-to-date data from the backend server.
-                                The site is currently hosted on Netlify.</p>
+                                It uses <span className={`highlight`}>Axios</span> and <span className={`highlight`}>AWS Lambda</span> functions to retrieve the latest information on movies from the backend server.
+                                <br></br>The site is currently hosted on Netlify.</p>
                             </div>
                         </div>
                     </div>

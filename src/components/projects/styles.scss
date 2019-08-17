@@ -3,7 +3,7 @@
 
 .projects {
     grid-column: container-start / col-end 8;
-    padding: 7rem 0;
+    padding: 5rem 0;
 
     @include breakpoint(md){
         grid-column: container-start / container-end;
